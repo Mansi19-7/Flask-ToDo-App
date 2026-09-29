@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{%  block content %}
+<div class="registration-box">
+    <h2>Registration</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contactNo">Contact No.</label>
+            <input type="tel" name="contactNo" id="contactNo" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+        <div class="form-group">
+            <label for="Field">Field</label>
+            <input type="checkbox" name="field" value="engineer"> Engineer
+            <input type="checkbox" name="field" value="doctor"> Doctor
+            <input type="checkbox" name="field" value="business"> Business
+            <input type="checkbox" name="field" value="care-taker"> Care-Taker
+            <input type="checkbox" name="field" value="Teacher"> Teacher
+        </div>
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+{% endblock %}
